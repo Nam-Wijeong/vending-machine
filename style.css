@@ -83,6 +83,11 @@ body {
   margin-bottom: 3px;
 }
 
+.violet::before {
+  content: '';
+  background-image: url(image/Sold-out.png);
+}
+
 .price_btn {
   cursor: pointer;
   width: 70px;
@@ -102,15 +107,23 @@ body {
 }
 
 .change_price {
-  text-align: left;
   width: 200px;
   height: 33px;
-  padding: 8px 16px;
   background-color: #eae8fe;
   border-radius: 6px;
   font-size: 14px;
+  padding: 6px 16px;
 }
 
+.change h2 {
+  display: inline;
+  text-align: left;
+  padding-right: 80px;
+}
+
+.change div {
+  display: inline;
+}
 .change_btn {
   cursor: pointer;
   width: 94px;
@@ -121,7 +134,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   font-size: 13px;
-  padding: 0 10px;
+  padding: 6px 0;
 }
 
 .receipts {
@@ -160,7 +173,7 @@ body {
 
 .gained_box {
   width: 200px;
-  height: 134px;
+  height: 106px;
   background-color: #eae8fe;
   border-radius: 6px;
 }
@@ -169,10 +182,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 14px;
+  margin: 8px 14px;
   padding: 14px;
   width: 170px;
-  height: 46px;
+  height: 40px;
   border-radius: 6px;
   background-color: #ffffff;
 }
@@ -235,6 +248,15 @@ body {
   font-size: 14px;
 }
 
+.current_money h2 {
+  display: inline;
+}
+
+.current_money div {
+  display: inline;
+  padding-left: 160px;
+}
+
 .bought_list {
   width: 360px;
   height: 477px;
@@ -247,20 +269,26 @@ body {
   width: 306px;
   height: 364px;
   margin: 0px auto;
+  padding: 10px 15px;
   background-color: #eae8fe;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
 }
 
 .bought_list_title {
   font-size: 14px;
+  padding: 16px 0;
   text-align: center;
 }
 
 .bought_cola {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  background-color: white;
+  border-radius: 6px;
   align-items: center;
-  margin: 0px 14px;
+  margin: 10px 0;
+  padding: 10px;
   width: 276px;
   height: 46px;
 }
@@ -268,8 +296,27 @@ body {
 .bought_cola img {
   width: 17.93px;
   height: 32.93px;
+  margin-right: 10px;
 }
 
 .bought_cola h2 {
   font-size: 9px;
+}
+
+.bought_cola p {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 3px;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.total {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 10px;
 }
