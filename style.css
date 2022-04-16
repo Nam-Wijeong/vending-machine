@@ -52,11 +52,13 @@ body {
 .menu_list {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 12px;
   margin: 12px;
 }
 
 .list {
+  position: relative;
   width: 94px;
   height: 130px;
   border: 1px solid #e5e5e5;
@@ -85,7 +87,21 @@ body {
 
 .violet::before {
   content: '';
-  background-image: url(image/Sold-out.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.violet .sold_out {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .price_btn {
@@ -118,7 +134,7 @@ body {
 .change h2 {
   display: inline;
   text-align: left;
-  padding-right: 80px;
+  padding-right: 78px;
 }
 
 .change div {
