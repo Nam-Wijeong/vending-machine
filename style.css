@@ -48,10 +48,6 @@ body {
   outline: 3px solid #6327fe;
 }
 
-.item-btn.sold-out {
-  pointer-events: none;
-}
-
 .item-btn.sold-out::before {
   content: '';
   display: block;
@@ -147,7 +143,7 @@ body {
   background-color: #eae8fe;
 }
 
-.select-list .select-btn {
+.select-btn {
   background-color: #fff;
   padding: 6px 10px;
   border-radius: 5px;
@@ -157,21 +153,21 @@ body {
   margin-top: 6px;
 }
 
-.select-list .select-btn .item-img {
+.select-btn .item-img {
   display: block;
   width: 18px;
   float: left;
   margin-right: 10px;
 }
 
-.select-list .select-btn .item-name {
+.select-btn .item-name {
   float: left;
   font-size: 10px;
   font-weight: 500;
   line-height: 32.5px;
 }
 
-.select-list .select-btn .item-num {
+.select-btn .item-num {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +191,56 @@ body {
 
 .my-info {
   width: 360px;
-  background-color: #fff;
   margin-top: 247px;
+}
+
+.mymoney-container {
+  background-color: #fff;
+  padding: 9px 27px;
+}
+
+.mymoney-info {
+  padding: 7px 10px 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #eae8fe;
+  border-radius: 5px;
+}
+
+.mymoney-txt {
+  float: right;
+}
+
+.myitem-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 24px 26px 52px 26px;
+}
+
+.myitem-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.myitem-list {
+  overflow: scroll;
+  background-color: #eae8fe;
+  height: 380px;
+  padding: 12px 18px 12px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.myitem-list li + li {
+  margin-top: 6px;
+}
+
+.total-price {
+  font-size: 12px;
+  font-weight: 500;
+  float: right;
+  margin-top: 10px;
 }
